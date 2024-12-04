@@ -70,11 +70,11 @@ export default function Navbar() {
     const drawer = (
         <div className = {classes.drawer}>
             <list>
-                {['Home', 'Cursos', 'Usuarios', 'Mas Informacion'].map((text) => {
+                {['Home', 'Cursos', 'Usuarios', 'Mas Informacion'].map((text) => (
                     <ListItem button component = { LinkBehavior} to = {`/${normalizeText(text)}`} key = {text}>
                         <ListItemText primary = {text} />
                     </ListItem>
-                })}
+                ))}
             </list>
         </div>
     );
